@@ -3,8 +3,8 @@ const Content = () => {
 
     return(
    
-       <main>
-        <p>
+       <main className="content__main">
+        <p className="content__p">
             CONTENT AREA
         </p>
        </main>
