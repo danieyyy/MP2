@@ -4,16 +4,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 const Header = () => {
+
     return(
         <header>
             <nav>
-                <div className="header__container">
+                <div className='header__navbar'>
                     
-                <Navbar className="bg-body-tertiary" style={{'background-color': 'red'}}>
-                    <Container>
+                <Navbar className="bg-body-tertiary header__navbar">
+                    <Container className='header__navbar'>
                         <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
                         <Navbar.Toggle />
-                        <Navbar.Collapse className="justify-content-end" style={{'background-color': 'red'}}>
+                        <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
                             Signed in as: <a href="#login">Mark Otto</a>
                         </Navbar.Text>

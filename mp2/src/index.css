@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header Area */
+
+/* .header__navbar {
+  background-color: red;
+} */
+
+nav.bg-body-tertiary.header__navbar.navbar.navbar-expand.navbar-light {
+  background-color: #5885af !important;
+}
+
+a.navbar-brand {
+  color: #c3e0e5;
+  font-weight: bold;
+}
+
+span.navbar-text {
+  color: #c3e0e5;
+}
+
+.a {
+  color: #c3e0e5;
+}
+
+/* Content Area */
+
+.content__main {
+  margin: 0;
+  background-color: #c3e0e5;
+}
+
+.content__p {
+  margin: 0;
+}
+
+div.Home {
+  background-color: #c3e0e5;
+}
+
+/* Footer Area */
+
+Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5885af;
+}
+
+.footer__p {
+  color: #c3e0e5;
+  font-weight: bold;
+  margin: 10px auto;
+}

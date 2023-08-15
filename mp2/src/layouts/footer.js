@@ -1,7 +1,7 @@
 const Footer = () => {
     return(
         <footer>
-            <p> NBS | EOTS v1.1.1 </p>
+            <p className="footer__p"> NBS | EOTS v1.1.1 </p>
         </footer>
     )
 }
