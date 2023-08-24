@@ -9,24 +9,30 @@ import Database from './pages/database'
 import Feedback from './pages/feedback'
 import RootLayout from './layouts/rootlayout'
 import EmployeeLayout from './layouts/employeelayout'
+import LoginLayout from './layouts/loginlayout'
 
 function App() {
   return (
     <Routes>
-     <Route element={<RootLayout />}>  
-        <Route path="/" element={<Home />}> </Route>
+
+      <Route element={<LoginLayout />}>
         <Route path="/login" element={<Login />}> </Route>
-        <Route path="/home" element={<Home />}> </Route>
-        <Route path="/dashboard" element={<Dashboard />}> </Route>
-        <Route path="/modules" element={<Modules /> }> </Route>
-        <Route path="/milestones" element={<Milestones /> }> </Route>
-        <Route path="/database" element={<Database /> }> </Route>
-        <Route path="/feedback" element={<Feedback /> }> </Route>
-     </Route>
+      </Route>
 
-     <Route element={<EmployeeLayout/>}>
+      <Route element={<RootLayout />}>  
+          <Route path="/" element={<Login />}> </Route>
+          
+          <Route path="/home" element={<Home />}> </Route>
+          <Route path="/dashboard" element={<Dashboard />}> </Route>
+          <Route path="/modules" element={<Modules /> }> </Route>
+          <Route path="/milestones" element={<Milestones /> }> </Route>
+          <Route path="/database" element={<Database /> }> </Route>
+          <Route path="/feedback" element={<Feedback /> }> </Route>
+      </Route>
 
-     </Route>
+      <Route element={<EmployeeLayout/>}>
+
+      </Route>
    </Routes>
   );
 }

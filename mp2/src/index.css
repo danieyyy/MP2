@@ -1,28 +1,27 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: /*-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */ 'Kumbh Sans',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: /*source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */ 'Kumbh Sans',sans-serif;
 }
 
 /* Header Area */
-
-/* .header__navbar {
-  background-color: red;
-} */
 
 nav.bg-body-tertiary.header__navbar.navbar.navbar-expand.navbar-light {
   background-color: #5885af !important;
 }
 
 a.navbar-brand {
+  display: flex;
   color: #c3e0e5;
   font-weight: bold;
 }
@@ -33,6 +32,17 @@ span.navbar-text {
 
 .a {
   color: #c3e0e5;
+}
+
+img#logo {
+  width: 100px;
+}
+
+p.logo__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 /* Content Area */
@@ -64,3 +74,177 @@ Footer {
   font-weight: bold;
   margin: 10px auto;
 }
+
+/* Login Page */
+
+.logo {
+  width: 150px;
+}
+
+.Login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3e0e5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.login__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #274472;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.logoName {
+  color: #c3e0e5;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+input#formGroupEmail.ui.form-control {
+  height: 25px;
+  padding-left: 5px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 5px;
+  font-size: smaller;
+  background-color: #c3e0e5;
+  color: #274472;
+}
+
+input#formGroupEmail.ui.form-control::placeholder {
+  font-weight: 500;
+  color: #274472;
+}
+
+input#formGroupPassword.ui.form-control::placeholder {
+  font-weight: 500;
+  color: #274472;
+}
+
+input#formGroupPassword.ui.form-control {
+  height: 25px;
+  padding-left: 5px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 5px;
+  font-size: smaller;
+  background-color: #c3e0e5;
+  color: #274472;
+}
+
+input#formGroupSubmit.ui.form-control {
+  background-color: #5885af;
+  color: #c3e0e5;
+  border: 1px solid #5885af;
+  border-radius: 5px;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: background-color 0.1s;
+}
+
+input#formGroupSubmit.ui.form-control:hover {
+  background-color: #c3e0e5;
+  color: #274472;
+}
+
+/* -------------------------------------------- */
+
+/* Home Page */
+.content {
+  display: block;
+  align-items: center;
+  color: #274472;
+  height: 100vh;
+}
+
+h1.content__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+p.content__welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 2% 10% 2% 10%;
+}
+
+p.content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2% 10% 2% 10%;
+}
+
+.content__iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+}
+
+.iconItem {
+  margin: 2% 1%;
+}
+
+.icon__unit {
+  flex: 1;
+  margin: 2% 1%;
+  background-color: #41729f;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.1s;
+}
+
+.icon__unit:hover {
+  background-color: #274472;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#icon__modules {
+  /* display: block; */
+  float: left;
+  width: 150px;
+}
+
+#icon__milestones {
+  /* display: block; */
+  float: left;
+  width: 150px;
+}
+
+#icon__database {
+  /* display: block; */
+  float: left;
+  width: 150px;
+}
+
+#icon__feedback {
+  /* display: block; */
+  float: left;
+  width: 150px;
+}
+
+#icon__dashboard {
+  /* display: block; */
+  float: left;
+  width: 150px;
+}
+/* -------------------------------------------- */
