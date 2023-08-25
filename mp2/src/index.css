@@ -47,6 +47,10 @@ p.logo__text {
 
 /* Content Area */
 
+div.root-main{
+  background-color: #c3e0e5 !important;
+}
+
 .content__main {
   margin: 0;
   background-color: #c3e0e5;
@@ -56,8 +60,12 @@ p.logo__text {
   margin: 0;
 }
 
-div.Home {
+div.Home{
   background-color: #c3e0e5;
+}
+
+div.Database{
+  background-color: #c3e0e5 !important;
 }
 
 /* Footer Area */
@@ -253,3 +261,87 @@ p.content__text {
   width: 150px;
 }
 /* -------------------------------------------- */
+
+/* Milestone Page */
+.titleHead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2% 10% 2% 10%;
+}
+
+.taskTracking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+}
+
+.task_box{
+  margin: 2% 1%;
+}
+
+.imgIcon{
+  flex: 1;
+  margin: 2% 1%;
+  background-color: #41729f;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.1s;
+}
+
+.imgIcon:hover{
+  background-color: #274472;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#task1{
+  float: left;
+  width: 150px;
+}
+
+#task2{
+  float: left;
+  width: 150px;
+}
+
+#task3{
+  float: left;
+  width: 150px;
+}
+
+#task4{
+  float: left;
+  width: 150px;
+}
+
+#task5{
+  float: left;
+  width: 150px;
+}
+
+#task6{
+  float: left;
+  width: 150px;
+}
+
+#task7{
+  float: left;
+  width: 150px;
+}
+
+#task8{
+  float: left;
+  width: 150px;
+}
+
+#task9{
+  float: left;
+  width: 150px;
+}
+
+#task10{
+  float: left;
+  width: 150px;
+}

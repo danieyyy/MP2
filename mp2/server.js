@@ -6,6 +6,7 @@ app.set("view engine","ejs")
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+
 const cors = require('cors')
 app.use(
     cors({
@@ -180,10 +181,6 @@ app.post('/submit-feedback', (req, res) => {
   
     res.status(200).json({ message: 'Feedback submitted successfully.' });
 });
-
-
-
-
 
 
 // -----------------------------------------------------------------
