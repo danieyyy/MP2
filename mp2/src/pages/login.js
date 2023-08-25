@@ -32,7 +32,6 @@ const Login = () => {
     
           if (data.Code === "200") {
             setSuccessMsg(data.Msg);
-            
             navigate('/home');
           } else {
             setSuccessMsg("Login failed!")
