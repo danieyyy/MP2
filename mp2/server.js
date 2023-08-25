@@ -6,6 +6,7 @@ app.set("view engine","ejs")
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+
 const cors = require('cors')
 app.use(
     cors({
@@ -45,10 +46,6 @@ app.post('/login',(req.res) => {
 
     console.log(user);
 })
-
-
-
-
 
 
 // -----------------------------------------------------------------
