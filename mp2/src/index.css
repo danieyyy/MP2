@@ -106,13 +106,18 @@ Footer {
   justify-content: center;
   background-color: #274472;
   width: 250px;
-  height: 350px;
+  padding: 20px 0 20px 0;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .logoName {
   color: #c3e0e5;
+}
+
+div.successMsg {
+  color: #c3e0e5;
+  font-weight: bold;
 }
 
 .fields {
