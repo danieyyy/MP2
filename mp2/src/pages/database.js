@@ -217,7 +217,7 @@ const filteredEmployees = employees.filter((employee) => {
                       />
                     </Form.Group>
 
-                    <Button variant="primary" onClick={editingIndex !== -1 ? updateEmployee : addEmployee}>
+                    <Button variant="primary m-2" onClick={editingIndex !== -1 ? updateEmployee : addEmployee}>
                       {editingIndex !== -1 ? 'Update' : 'Add'}
                     </Button>
 
@@ -250,7 +250,7 @@ const filteredEmployees = employees.filter((employee) => {
                       <td>{employee.dateHired}</td>
                       <td>
                         <Button
-                          variant="info"
+                          variant="primary"
                           className="mr-2"
                           onClick={() => editEmployee(index)}
                         >
@@ -258,6 +258,7 @@ const filteredEmployees = employees.filter((employee) => {
                         </Button>
                         <Button
                           variant="danger"
+                          className='m-2'
                           onClick={() => deleteEmployee(index)}
                         >
                           Delete
