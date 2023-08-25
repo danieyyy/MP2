@@ -9,7 +9,7 @@ app.use(express.json())
 const cors = require('cors')
 app.use(
     cors({
-        origin: "http://localhost:5000"
+        origin: "http://localhost:3000"
     })
 )
 
@@ -32,7 +32,7 @@ const LoginProfiles = [
     }
 ];
 
-app.post('/login',(req.res) => {
+app.post('/login',(req,res) => {
     const {username, email, password} = req.body;
 
     const user = LoginProfiles.find(
@@ -44,7 +44,29 @@ app.post('/login',(req.res) => {
     )
 
     console.log(user);
+
+    if(user) {
+
+        const accessToken = generateAccessToken(user);
+
+        res.json(
+        {"Code":"200","Msg":"Success!"}
+        )
+    } else{
+        res.status(401).json({"Code":"401","Msg":"Failed!"})
+    }
 })
+
+const generateAccessToken = (user) => {
+    return jwt.sign(
+        {
+            id: user.id,
+            asAdmin: user.isAdmin
+        },
+        "ThisIsMySecretKeysdlkfvnaeklsbnfalbfnskdlbnfs",
+        { expiresIn: "100s" }
+    )
+}
 
 
 
