@@ -46,6 +46,9 @@ p.logo__text {
 }
 
 /* Content Area */
+div.container{
+  overflow: scroll !important;
+}
 
 div.root-main{
   background-color: #c3e0e5 !important;
