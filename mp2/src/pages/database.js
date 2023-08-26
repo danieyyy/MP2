@@ -258,7 +258,7 @@ const filteredEmployees = employees.filter((employee) => {
                         </Button>
                         <Button
                           variant="danger"
-                          className="m-2"
+                          className='m-2'
                           onClick={() => deleteEmployee(index)}
                         >
                           Delete
